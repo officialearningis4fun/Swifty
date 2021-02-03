@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/groceryCollectionFragment">
+
+    <fragment
+        android:id="@+id/groceryCollectionFragment"
+        android:name="com.learningis4fun.swifty.ui.collection.CollectionFragment"
+        android:label="fragment_grocery_collection"
+        tools:layout="@layout/fragment_grocery_collection" >
+        <action
+            android:id="@+id/action_groceryCollectionFragment_to_groceryListFragment"
+            app:destination="@id/groceryListFragment" />
+        <action
+            android:id="@+id/action_groceryCollectionFragment_to_addEditCollectionFragment"
+            app:destination="@id/addEditCollectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEditCollectionFragment"
+        android:name="com.learningis4fun.swifty.ui.addEditCollection.AddEditCollectionFragment"
+        android:label="AddEditCollectionFragment" />
+    <fragment
+        android:id="@+id/groceryListFragment"
+        android:name="com.learningis4fun.swifty.ui.groceryList.GroceryListFragment"
+        android:label="GroceryListFragment" >
+        <action
+            android:id="@+id/action_groceryListFragment_to_addEditGroceryListFragment"
+            app:destination="@id/addEditGroceryListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEditGroceryListFragment"
+        android:name="com.learningis4fun.swifty.ui.addEditGroceryListItem.AddEditGroceryListFragment"
+        android:label="AddEditGroceryListFragment" />
+</navigation>

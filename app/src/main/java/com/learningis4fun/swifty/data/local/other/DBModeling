@@ -1,0 +1,35 @@
+
+<- Collection(id, name) ->
+col1
+col2
+col3
+
+<- Category(id, name) ->
+Vegetables
+Meats
+
+<- GroceryList(id, name) -> id
+polony
+russian
+cheese
+
+categoryWithGroceryList(id : catId)
+
+<- GroceryList ->
+Meats -->
+polony
+russian
+cheese
+
+vegetables -->
+cabbage
+spinach
+
+[How to get the list with categories]
+{1. have the id of collection,
+2. get the categoriesWithListItems
+}
+
+
+
+

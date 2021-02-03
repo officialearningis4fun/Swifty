@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Swifty</string>
+
+    <!-- Fragment grocery collection -->
+    <string name="fragment_grocery_collection_fab_text">Create new item</string>
+    <string name="fragment_grocery_collection_title_text">Swifty</string>
+</resources>

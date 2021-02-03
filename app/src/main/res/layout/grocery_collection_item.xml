@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingStart="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_baseline_eco_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/name_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Monthly grocery" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/price_weight_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/date_created"
+        app:layout_constraintStart_toStartOf="@id/name_textView"
+        app:layout_constraintTop_toBottomOf="@id/name_textView"
+        tools:text="M56.00 - 23 items, 56kg" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/date_created"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/price_weight_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="2021/01/19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

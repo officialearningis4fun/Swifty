@@ -9,7 +9,7 @@
         android:id="@+id/groceryCollectionFragment"
         android:name="com.learningis4fun.swifty.ui.collection.CollectionFragment"
         android:label="fragment_grocery_collection"
-        tools:layout="@layout/fragment_grocery_collection" >
+        tools:layout="@layout/fragment_collection" >
         <action
             android:id="@+id/action_groceryCollectionFragment_to_groceryListFragment"
             app:destination="@id/groceryListFragment" />
@@ -20,7 +20,12 @@
     <fragment
         android:id="@+id/addEditCollectionFragment"
         android:name="com.learningis4fun.swifty.ui.addEditCollection.AddEditCollectionFragment"
-        android:label="AddEditCollectionFragment" />
+        android:label="AddEditCollectionFragment" >
+        <argument
+            android:name="collection"
+            app:argType="com.learningis4fun.swifty.data.Collection"
+            app:nullable="true" />
+    </fragment>
     <fragment
         android:id="@+id/groceryListFragment"
         android:name="com.learningis4fun.swifty.ui.groceryList.GroceryListFragment"
@@ -32,5 +37,10 @@
     <fragment
         android:id="@+id/addEditGroceryListFragment"
         android:name="com.learningis4fun.swifty.ui.addEditGroceryListItem.AddEditGroceryListFragment"
-        android:label="AddEditGroceryListFragment" />
+        android:label="AddEditGroceryListFragment" >
+        <argument
+            android:name="groceryListItem"
+            app:argType="com.learningis4fun.swifty.data.GroceryListItem"
+            app:nullable="true" />
+    </fragment>
 </navigation>

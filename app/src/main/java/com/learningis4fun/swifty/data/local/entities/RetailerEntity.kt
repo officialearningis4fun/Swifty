@@ -1,4 +1,4 @@
-package com.learningis4fun.swifty.data.local.entity
+package com.learningis4fun.swifty.data.local.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

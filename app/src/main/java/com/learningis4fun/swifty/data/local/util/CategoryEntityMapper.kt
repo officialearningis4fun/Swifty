@@ -1,7 +1,7 @@
 package com.learningis4fun.swifty.data.local.util
 
 import com.learningis4fun.swifty.data.Category
-import com.learningis4fun.swifty.data.local.entity.CategoryEntity
+import com.learningis4fun.swifty.data.local.entities.CategoryEntity
 
 class CategoryEntityMapper :
     EntityMapper<CategoryEntity, Category> {

@@ -21,20 +21,34 @@ object AppModule {
     @Provides
     fun provideDatabase(
         app: Application,
-        callBack: GroceryListDatabase.CallBack
+        callBack: GroceryListDatabase.CallBack,
+        categoryCallBack : GroceryListDatabase.CategoriesCallBack
     ) =
         Room.databaseBuilder(app, GroceryListDatabase::class.java, "groceryListDatabase.db")
             .fallbackToDestructiveMigration()
             .addCallback(callBack)
+            .addCallback(categoryCallBack)
             .build()
 
+    @Singleton
     @Provides
     fun provideGroceryListDao(db: GroceryListDatabase) = db.groceryListDao()
+
+    @Singleton
+    @Provides
+    fun provideGroceryCollectionDao(db: GroceryListDatabase) = db.groceryCollectionDao()
+
+    @Singleton
+    @Provides
+    fun provideCategoryDao(db: GroceryListDatabase) = db.categoryDao()
+
+    @Singleton
+    @Provides
+    fun provideCollectionCategoryCrossRefDao(db: GroceryListDatabase) = db.collectionCategoryCrossRef()
 
     @ApplicationScope
     @Provides
     fun providesApplicationScope() = CoroutineScope(SupervisorJob())
-
 
 }
 

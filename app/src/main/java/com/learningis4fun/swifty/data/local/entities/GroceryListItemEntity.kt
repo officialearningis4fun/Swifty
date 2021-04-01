@@ -1,4 +1,4 @@
-package com.learningis4fun.swifty.data.local.entity
+package com.learningis4fun.swifty.data.local.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -24,14 +24,18 @@ data class GroceryListItemEntity(
     val name: String = "",
     @ColumnInfo(name = "groceryListItemCollectionId")
     val collectionId : Int = 0,
-    @ColumnInfo(name = "groceryListItemCategoryId")
+    @ColumnInfo(name = "groceryItemCategoryId")
     val categoryId : Int = 0,
     @ColumnInfo(name = "groceryListItemPricePerItem")
     val pricePerItem: Double = 0.0,
     @ColumnInfo(name = "groceryListItemTotalPrice")
     val totalPrice : Double = 0.0,
-    @ColumnInfo(name = "groceryListItemWeight")
-    val weight : Double = 0.0,
+    @ColumnInfo(name = "groceryListItemWeightPerItem")
+    val weightPerItem : Double = 0.0,
+    @ColumnInfo(name = "groceryListItemTotalWeight")
+    val totalWeight : Double = 0.0,
+    @ColumnInfo(name = "groceryListItemWeightUnits")
+    val weightUnits : String = "",
     @ColumnInfo(name = "groceryListItemNumberOfItems")
     val numberOfItems : Int = 0,
     @ColumnInfo(name = "groceryListItemRetailerId")

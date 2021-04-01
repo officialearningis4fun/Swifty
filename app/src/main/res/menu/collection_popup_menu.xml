@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_popup_menu_rename_collection"
+        android:title="@string/action_popup_menu_rename_collection_text" />
+
+    <item
+        android:id="@+id/action_popup_menu_delete_collection"
+        android:title="@string/action_popup_menu_delete_collection_text" />
+
+</menu>

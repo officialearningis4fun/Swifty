@@ -1,7 +1,7 @@
 package com.learningis4fun.swifty.data.local.util
 
 import com.learningis4fun.swifty.data.Retailer
-import com.learningis4fun.swifty.data.local.entity.RetailerEntity
+import com.learningis4fun.swifty.data.local.entities.RetailerEntity
 
 class RetailerEntityMapper : EntityMapper<RetailerEntity, Retailer> {
     override fun mapFromEntity(entity: RetailerEntity): Retailer {

@@ -1,7 +1,7 @@
 package com.learningis4fun.swifty.data.local.util
 
 import com.learningis4fun.swifty.data.Collection
-import com.learningis4fun.swifty.data.local.entity.CollectionEntity
+import com.learningis4fun.swifty.data.local.entities.CollectionEntity
 
 class CollectionEntityMapper : EntityMapper<CollectionEntity, Collection> {
     override fun mapFromEntity(entity: CollectionEntity): Collection {

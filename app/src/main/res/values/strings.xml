@@ -4,4 +4,40 @@
     <!-- Fragment grocery collection -->
     <string name="fragment_grocery_collection_fab_text">Create new item</string>
     <string name="fragment_grocery_collection_title_text">Swifty</string>
+    <string name="action_popup_menu_delete_collection_text">Delete</string>
+    <string name="action_popup_menu_rename_collection_text">Rename</string>
+
+    <!-- Fragment add edit collection -->
+    <string name="fragment_add_edit_collection_save_btn_text">Save</string>
+
+    <!-- Fragment add edit grocery list -->
+    <string name="text_save_btn_fragment_add_edit_grocery_list">Save</string>
+    <string name="text_item_details_title_fragment_add_edit_grocery_list">Item details</string>
+    <string name="text_item_mass_of_each_title_fragment_add_edit_grocery_list">Mass of each</string>
+    <string name="text_item_price_for_each_title_fragment_add_edit_grocery_list">Price for each</string>
+    <string name="text_number_of_items_title_fragment_add_edit_grocery_list">Number of items</string>
+    <string name="text_item_category_title_fragment_add_edit_grocery_list">Category</string>
+    <string name="text_item_radio_btn_kilogram_fragment_add_edit_grocery_list">kg</string>
+    <string name="text_item_radio_btn_gram_fragment_add_edit_grocery_list">g</string>
+
+    <!-- Fragment grocery list -->
+    <string name="fragment_grocery_list_fab_text">Add new item</string>
+
+    <!-- Grocery categories -->
+    <string-array name="grocery_categories">
+        <item>Baby items</item>
+        <item>Bakery</item>
+        <item>Beverages</item>
+        <item>Canned goods</item>
+        <item>Cereal/Breakfast</item>
+        <item>Dairy</item>
+        <item>Fruits and veggies</item>
+        <item>Health and beauty</item>
+        <item>Household</item>
+        <item>Meat products</item>
+        <item>Staples</item>
+        <item>Spices</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
 </resources>

@@ -1,7 +1,7 @@
 package com.learningis4fun.swifty.data.local.util
 
 import com.learningis4fun.swifty.data.GroceryListItem
-import com.learningis4fun.swifty.data.local.entity.GroceryListItemEntity
+import com.learningis4fun.swifty.data.local.entities.GroceryListItemEntity
 
 class GroceryListItemEntityMapper : EntityMapper<GroceryListItemEntity, GroceryListItem> {
     override fun mapFromEntity(entity: GroceryListItemEntity): GroceryListItem {
@@ -12,7 +12,9 @@ class GroceryListItemEntityMapper : EntityMapper<GroceryListItemEntity, GroceryL
             categoryId = entity.categoryId,
             pricePerItem = entity.pricePerItem,
             totalPrice = entity.totalPrice,
-            weight = entity.weight,
+            weightPerItem = entity.weightPerItem,
+            totalWeight = entity.totalWeight,
+            weightUnits = entity.weightUnits,
             numberOfItems = entity.numberOfItems,
             retailerId = entity.retailerId,
             isPurchased = entity.isPurchased
@@ -27,7 +29,9 @@ class GroceryListItemEntityMapper : EntityMapper<GroceryListItemEntity, GroceryL
             categoryId = model.categoryId,
             pricePerItem = model.pricePerItem,
             totalPrice = model.totalPrice,
-            weight = model.weight,
+            weightPerItem = model.weightPerItem,
+            totalWeight = model.totalWeight,
+            weightUnits = model.weightUnits,
             numberOfItems = model.numberOfItems,
             retailerId = model.retailerId,
             isPurchased = model.isPurchased
